@@ -1,3 +1,4 @@
+
 /*NavBar*/
 #header {
     margin-left: auto;
@@ -77,7 +78,12 @@ h2 {
     width: 90%;
     max-width: 750px;
     display: flex;
+    padding-top: 4em;
 
+}
+
+div.gallery {
+        margin-right: 0em;
 }
 
 .gallery {
@@ -85,6 +91,7 @@ h2 {
     background: #ffff;
     transform: scale(1.08);
     box-shadow: -5px 5px 20px 4px rgba(0, 0, 0, 0.1);
+
 
 }
 
@@ -96,7 +103,7 @@ h2 {
 }
 
 .details {
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     flex-basis: 53%;
     background: #ffff;
     padding-left: 60px;
@@ -177,6 +184,7 @@ form button{
 }
 
 .producttwo {
+    padding-top: 10em;
     width: 90%;
     max-width: 750px;
     display: flex;
@@ -188,6 +196,9 @@ form button{
     background: #ffff;
     transform: scale(1.08);
     box-shadow: -5px 5px 20px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 2em;
+    padding: 32px;
+    
 
 }
 
@@ -257,7 +268,7 @@ form button{
     background: #ffff;
     color: #fffff;
     font-size: 17px;
-    width: 75%;
+    width: 85%;
     padding: 10px;
     border-radius: 30px;
     border: 0px;
@@ -460,31 +471,139 @@ img {max-width: 100%;
 }
 .newspop.active .overlay {
     display: block;
+    width: 100%;
 }
 
 .newspop.active .content {
     transition:all 300ms ease-in-out;
     transform: translate(-50%,-50%) scale(1);
+    height: 500px;
 }
 
 .newsbutton {
+    margin-top: 2em;
     position: absolute;
-    background: none;
-    border-color: #F5FFFF;
+    background-color: #F5FFFF;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
     width: 450px;
     height: 600px;
     box-shadow: none;
     cursor: pointer;
+    margin-left: 20em;
     
 }
 
-.news {
-        background-color: #F5FFFF;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
+.newspop button {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #ffff;
+    color: #fffff;
+    font-size: 17px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0px;
+    outline: 0;
+    margin-top: 20px;
+    box-shadow: -5px 5px 20px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.newspop p {
     font-family: 'Montserrat', sans-serif;
-    align-items: center;
+
+}
+
+.newspop2 .overlay2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.newspop2 .content2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height:220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.newspop2 .close-btn2 {
+    position: absolute;
+    right:20px;
+    top:20px;
+    width: 30px;
+    height:30px;
+    background:#222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.newspop2.active .overlay2 {
+    display: block;
+    width: 100%;
+}
+
+.newspop2.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+    height: 500px;
+}
+
+.newsbutton2 {
+    margin-top: 2em;
+    position: relative;
+    float: right;
+    background-color: #F5FFFF;
+    width: 450px;
+    height: 600px;
+    box-shadow: none;
+    cursor: pointer;
+    margin-right: 20em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.newspop2 button {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #ffff;
+    color: #fffff;
+    font-size: 17px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0px;
+    outline: 0;
+    margin-top: 20px;
+    box-shadow: -5px 5px 20px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.newspop2 p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hometable, th, td {
@@ -513,3 +632,28 @@ form {
     font-family: 'Montserrat', sans-serif;
 
 }
+
+.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+    padding: 2em;
+    margin-right: 3em;
+}
+
+.gallery:hover {
+    cursor: pointer;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallerybox {
+    width: 100%;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
